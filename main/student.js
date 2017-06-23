@@ -8,5 +8,5 @@ function Student(name,age,klass)
 }
 Student.prototype.introduce=function()
 {
-	return (Person.prototype.introduce.apply(this)+". I am at Class "+this.klass+".")
+	return (Person.prototype.introduce.apply(this)+" I am a Student. "+"I am at Class "+this.klass+".")
 }
