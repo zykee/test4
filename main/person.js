@@ -2,10 +2,10 @@
 module.exports = Person
 function Person(name,age)
 {
-	this.name="Tom"
-	this.age=18
+	this.name=name
+	this.age=age
 }
 Person.prototype.introduce=function()
 {
-	alert("My name is"+ this.name". I am"+this.age"years old.")	
+	return("My name is"+ this.name+". I am"+this.age+"years old.")	
 }

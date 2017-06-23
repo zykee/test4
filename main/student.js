@@ -3,11 +3,10 @@ let Person = require('./person')
 module.exports = Student
 function Student(name,age,klass)
 {
-	person.call(this,name,age)
+	Person.call(this,name,age)
 	tihs.klass=klass
 }
-Student.prototype=new Person() 
-Student.prototype.showklass()
+Student.prototype.Student()
 {
-	alert(". I am at Class "+this.klass+".")
+	return Person.prototype.introduce.apply(this)+(". I am at Class "+this.klass+".")
 }
