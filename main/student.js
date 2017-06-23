@@ -4,7 +4,7 @@ module.exports = Student
 function Student(name,age,klass)
 {
 	Person.call(this,name,age)
-	Student.klass=klass
+	this.klass=klass
 }
 Student.prototype.introduce=function()
 {
